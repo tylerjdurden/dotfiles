@@ -6,6 +6,7 @@ set showmatch
 set splitbelow
 set splitright
 set nohlsearch
+set clipboard=unnamedplus
 
 "set leader key
 let mapleader="\<SPACE>"
@@ -23,14 +24,15 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-markdown'
-Plug 'floobits/floobits-neovim'
+" Plug 'floobits/floobits-neovim'
 Plug 'easymotion/vim-easymotion'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'Shougo/deoplete.nvim'
+" Plug 'Shougo/deoplete.nvim'
 Plug 'zchee/deoplete-clang'
 Plug 'altercation/vim-colors-solarized'
 Plug 'euclio/vim-markdown-composer'
+Plug 'godlygeek/tabular'
 " Plug 'ervandew/supertab'
 
 call plug#end()
@@ -98,9 +100,9 @@ set undoreload=10000
 
 " force *.md to be markdown files
 " also need this for instant-markdown-d
-" filetype plugin on
+filetype plugin on
 " for vim-markdown-composer
-let g:markdown_composer_browser='chromium'
-let g:markdown_composer_autostart=1
-let g:markdown_composer_open_browser=1
-autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+" let g:markdown_composer_browser='chromium'
+" let g:markdown_composer_autostart=1
+" let g:markdown_composer_open_browser=1
+" autocmd BufNewFile,BufReadPost *.md set filetype=markdown
